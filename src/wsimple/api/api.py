@@ -131,6 +131,7 @@ class Wsimple:
         elif self.oauth_mode:
             self.logger.info("Mode: Oauth (Bypass)")
             self.tokens = tokens
+            self.box = TokensBox(tokens[0], tokens[1], datetime.now() + timedela(hours=1))
         else:
             payload = {"email": email, "password": password}
             r = requestor(
