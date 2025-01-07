@@ -119,6 +119,7 @@ class Wsimple:
         self.oauth_mode = oauth_mode
         self.logger = logger
         self.internally_manage_tokens = internally_manage_tokens
+        self.box = None
         if not self.verbose:
             self.logger.add(sys.stderr, level="SUCCESS")
         else:
