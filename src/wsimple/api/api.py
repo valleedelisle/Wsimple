@@ -90,6 +90,7 @@ class Wsimple:
     }
     friendly_account_name = {
         "ca_tfsa": "tfsa",
+        "ca_lira": "lira",
         "ca_non_registered": "personal",
         "ca_rrsp": "rrsp",
         "ca_non_registered_crypto": "crypto",
